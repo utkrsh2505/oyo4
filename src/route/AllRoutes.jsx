@@ -5,6 +5,7 @@ import Hotel from "../pages/Hotel";
 import Login from "../pages/Login";
 import CheckOut from "../pages/CheckOut";
 import HotelRoomDetails from "../pages/HotelRoomDetails";
+import Allcities from "../pages/Allcities";
 
 const AllRoutes = () => {
   return (
@@ -23,6 +24,9 @@ const AllRoutes = () => {
       </Route>
       <Route exact path="/login-signup">
         <Login />
+      </Route>
+      <Route exact path="/allcities">
+        <Allcities/>
       </Route>
       <Route exact path="/oyorooms/:city/:id">
         <HotelRoomDetails />
